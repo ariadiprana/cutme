@@ -17,6 +17,8 @@ module.exports = {
 }
 
 function insert(req,res,next){
+    var fs = require('fs')
+
     var items = new Orders({
       hairStyleId:req.body.hairStyleId,
       barberName:req.body.barberName,
@@ -24,11 +26,16 @@ function insert(req,res,next){
       dt_created:req.body.dt_created,
       customerId:req.body.customerId,
       status:req.body.status,
-      hairPreference:req.body.hairPreference
+      hairPreference:req.body.hairPreference,
+      imgBefore: {
+        data: fs.readFileSync(req.body.fileImgBefore),
+        contentType: 'image/png'
+      }
     })
     items.save()
     res.json(items)
 }
+
 
 function update(req,res,next){
   Orders.findOne({
@@ -48,6 +55,7 @@ function update(req,res,next){
       })
   })
 }
+
 
 function hapus(req,res,next){
   Orders.findOne({
