@@ -2,7 +2,7 @@
 ## Your solution for your hair need
 This is application for your hair problem, when you need to cut your hair, make an order and your personal hair assistant will come to your location.
 
-This application is made by using 
+This application is made by using
 
 This project is contributed by :
 1. ariadiprana :construction_worker:
@@ -23,6 +23,16 @@ Server & Client
 ## Server
 
 ### Customers
+Property :
+- fullName    : String,
+- email       : String,
+- username    : String,
+- password    : String,
+- memberId    : String,
+- address     : String,
+- zipcode     : String,
+- phone       : String
+
 
 |Endpoint|HTTP|Description
 |--------|----|-----------
@@ -33,6 +43,14 @@ Server & Client
 
 
 ### Orders
+Property :
+- hairStyleId     :String,
+- barberName      :String,
+- address         :String,
+- dt_created      :Date,
+- customerId      :String,
+- status          :String,
+- hairPreference  :String
 
 |Endpoint|HTTP|Description
 |--------|----|-----------
