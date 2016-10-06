@@ -6,7 +6,31 @@
   font: 14px "Prompt", sans-serif
 
 html
-  background: $theme-shade-2
+  background: $theme-shade-1
 
 body
   background: transparent
+
+.with-opacity
+  opacity: 0.5
+
+.wr-full-width
+  +background-cover($theme-shade-2)
+  margin-left: -15px
+  margin-right: -15px
+  height: 400px
+
+.wr-gradient-bottom
+  position: relative
+  &:after
+    +linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+    content: ""
+    position: absolute
+    bottom: 0px
+    width: 100%
+    height: 120px
+
+.quote
+  text-align: center
+  .text, .author
+    display: block
