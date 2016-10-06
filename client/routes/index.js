@@ -3,20 +3,23 @@ var router = express.Router()
 
 router.get('/', function(req, res, next) {
   var locals = {
-    title: 'Page Title',
-    description: 'Page Description',
-    header: 'Page Header'
+    dashboard: false
   };
   res.render('pages/signin', locals);
 })
 
 router.get('/signup', function(req, res, next) {
   var locals = {
-    title: 'Page Title',
-    description: 'Page Description',
-    header: 'Page Header'
+    dashboard: false
   };
   res.render('pages/signup', locals);
+})
+
+router.get('/dashboard', function(req, res, next) {
+  var locals = {
+    dashboard: true
+  };
+  res.render('pages/dashboard', locals);
 })
 
 module.exports = router

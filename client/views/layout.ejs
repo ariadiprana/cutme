@@ -4,11 +4,20 @@
   <%- include meta.ejs %>
 </head>
 <body>
+  <% if(dashboard){ %>
+  <section class="content dashboard-content">
+    <div class="container">
+      <%- include dashboard_nav.ejs %>
+      <%- content %>
+    </div>
+  </section>
+  <% } else { %>
   <section class="content">
     <div class="container">
       <%- content %>
     </div>
   </section>
+  <% } %>
   <%- include script.ejs %>
 </body>
 </html>

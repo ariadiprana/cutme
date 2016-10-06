@@ -14,6 +14,9 @@ body
 section.content
   padding-bottom: 70px
 
+section.dashboard-content
+  padding-top: 70px
+
 .with-opacity
   opacity: 0.5
 
@@ -53,6 +56,25 @@ section.content
 .form-feedback
   margin-top: 20px
   text-align: center
+
+.wr-section
+  .wr-title
+    + .wr-content
+      margin-top: 20px
+  .wr-content
+
+.wr-map
+  background: $theme-shade-4
+  margin-bottom: 20px
+  position: relative
+  .map-block
+    height: 300px
+  .map-pin
+    position: absolute
+    +calculate-top(50%, 20px)
+    +calculate-left(50%, 12.5px)
+    img
+      height: 40px
 
 #cutme-menu
   background: $theme-shade-1

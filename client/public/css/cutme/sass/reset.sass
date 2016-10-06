@@ -2,10 +2,21 @@ html, body, ul, ol
   margin: 0px
   padding: 0px
 
+img
+  +manipulation-none
+
 a
   cursor: pointer
   outline: none !important
   text-decoration: none !important
+
+h1, h2, h3, h4, h5, h6
+  margin: 0px
+
+ul
+  list-style: none
+  margin: 0px
+  padding: 0px
 
 .input-group-addon
   border-color: transparent !important
@@ -42,5 +53,33 @@ a
   &.btn-danger:hover, &.btn-danger:focus
     color: $theme-shade-1
 
-img
-  +manipulation-none
+.thumbnail
+  border-radius: 0px
+  margin: 0px
+  padding: 10px
+  img
+    background: $theme-shade-4
+    +transition(all, linear, 0.2s)
+  .caption
+    margin-top: 10px
+    padding: 0px
+    text-align: left
+    .row
+      margin: 0px
+      [class*="col-"]
+        padding: 0px
+    .title
+    ul.info
+      padding: 6.5px 0px
+      &::after
+        +clear-both()
+      li
+        float: left
+        .fa
+          margin-right: 3px
+        &:nth-child(n+2)
+          margin-left: 15px
+    .action
+      border-top: 1px solid $theme-shade-4
+      margin-top: 10px
+      padding-top: 10px
