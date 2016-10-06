@@ -11,6 +11,9 @@ html
 body
   background: transparent
 
+section.content
+  padding-bottom: 70px
+
 .with-opacity
   opacity: 0.5
 
@@ -31,6 +34,35 @@ body
     height: 120px
 
 .quote
+  padding: 40px 0px
   text-align: center
+  &:after
+    background: $theme-color-woman-2
+    content: ""
+    display: block
+    margin: 40px auto 0px
+    width: 70%
+    height: 1px
   .text, .author
     display: block
+  .author
+    font-size: 12px
+    font-weight: bold
+    margin-top: 5px
+
+.form-feedback
+  margin-top: 20px
+  text-align: center
+
+#cutme-menu
+  background: $theme-shade-1
+  border: 1px solid $theme-shade-2
+  border-radius: 100%
+  position: fixed
+  top: 20px
+  right: 20px
+  width: 50px
+  height: 50px
+  z-index: 100
+  #cutme-tagline
+    padding: 25px 0px
