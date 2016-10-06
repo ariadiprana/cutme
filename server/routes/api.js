@@ -1,12 +1,24 @@
 const express = require('express')
 const router = express.Router()
-const itemsController = require('../controllers/items')
+const ordersController = require('../controllers/orders')
+const customerController = require('../controllers/customers')
 
+/*
+================== Orders API ==================
+*/
+router.post('/orders', ordersController.insert)
+router.get('/orders', ordersController.display)
+router.put('/orders/:id', ordersController.update)
+router.delete('/orders/:id', ordersController.hapus)
 
-router.post('/items', itemsController.insert)
-router.get('/items', itemsController.display)
-router.put('/items/:id', itemsController.update)
-router.delete('/items/:id', itemsController.hapus)
+//--------------------------------------------//
 
+/*
+================ Customer API ================
+*/
+router.post('/customers', customerController.insert)
+router.get('/customers', customerController.display)
+router.put('/customers/:id', customerController.update)
+router.delete('/customers/:id', customerController.hapus)
 
 module.exports = router
