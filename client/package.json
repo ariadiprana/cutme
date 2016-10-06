@@ -1,0 +1,21 @@
+{
+  "name": "cutme-client",
+  "version": "1.0.0",
+  "description": "CutMe Client Website",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cutting",
+    "hair"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-ejs-layouts": "^2.2.0",
+    "node-sass-middleware": "^0.9.8"
+  }
+}
