@@ -8,7 +8,9 @@ var orderSchema = mongoose.Schema({
     dt_created:Date,
     customerId:String,
     status:String,
-    hairPreference:String
+    hairPreference:String,
+    imgBefore:{ data: Buffer, contentType: String},
+    imgAfter:{ data: Buffer, contentType: String}
 })
 
 module.exports= mongoose.model('order', orderSchema)
