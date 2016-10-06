@@ -1,4 +1,5 @@
 var express = require('express')
+var expressLayouts = require('express-ejs-layouts');
 var path = require('path')
 var ejs = require('ejs')
 var app = express()
@@ -6,10 +7,11 @@ var port = process.env.PORT || 9000;
 
 // view engine setup
 app.set('view engine', 'ejs');
+app.use(expressLayouts);
 
 app.use(require('node-sass-middleware')({
-    src: path.join(__dirname, 'public/sass'),
-    dest: path.join(__dirname, 'public/css'),
+    src: path.join(__dirname, 'public'),
+    dest: path.join(__dirname, 'public'),
     indentedSyntax: true,
     sourceMap: true
 }));

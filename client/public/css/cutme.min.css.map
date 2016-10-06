@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "cutme.min.css",
+	"sources": [
+		"cutme.min.sass"
+	],
+	"mappings": "",
+	"names": []
+}
