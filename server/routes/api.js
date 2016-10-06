@@ -3,6 +3,11 @@ const router = express.Router()
 const ordersController = require('../controllers/orders')
 const customerController = require('../controllers/customers')
 
+
+router.get('/', function(req, res) {
+    res.render('main.ejs');
+});
+
 /*
 ================== Orders API ==================
 */
