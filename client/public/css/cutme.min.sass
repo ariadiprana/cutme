@@ -6,7 +6,63 @@
   font: 14px "Prompt", sans-serif
 
 html
-  background: $theme-shade-2
+  background: $theme-shade-1
 
 body
   background: transparent
+
+section.content
+  padding-bottom: 70px
+
+.with-opacity
+  opacity: 0.5
+
+.wr-full-width
+  +background-cover($theme-shade-2)
+  margin-left: -15px
+  margin-right: -15px
+  height: 400px
+
+.wr-gradient-bottom
+  position: relative
+  &:after
+    +linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+    content: ""
+    position: absolute
+    bottom: 0px
+    width: 100%
+    height: 120px
+
+.quote
+  padding: 40px 0px
+  text-align: center
+  &:after
+    background: $theme-color-woman-2
+    content: ""
+    display: block
+    margin: 40px auto 0px
+    width: 70%
+    height: 1px
+  .text, .author
+    display: block
+  .author
+    font-size: 12px
+    font-weight: bold
+    margin-top: 5px
+
+.form-feedback
+  margin-top: 20px
+  text-align: center
+
+#cutme-menu
+  background: $theme-shade-1
+  border: 1px solid $theme-shade-2
+  border-radius: 100%
+  position: fixed
+  top: 20px
+  right: 20px
+  width: 50px
+  height: 50px
+  z-index: 100
+  #cutme-tagline
+    padding: 25px 0px

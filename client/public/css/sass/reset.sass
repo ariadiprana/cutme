@@ -5,16 +5,42 @@ html, body, ul, ol
 a
   cursor: pointer
   outline: none !important
+  text-decoration: none !important
 
 .input-group-addon
-  border-color: $main-color-1 !important
+  border-color: transparent !important
 
 .form-control
   box-shadow: none !important
   border: none
+  border-bottom: 1px solid $theme-shade-4
+  border-radius: 0px
 
 .btn
+  background: transparent
+  border-radius: 0px
   outline: none !important
+  &.btn-primary
+    border-color: $theme-status-primary
+    color: $theme-status-primary
+  &.btn-success
+    border-color: $theme-status-success
+    color: $theme-status-success
+  &.btn-info
+    border-color: $theme-status-info
+    color: $theme-status-info
+  &.btn-warning
+    border-color: $theme-status-warning
+    color: $theme-status-warning
+  &.btn-danger
+    border-color: $theme-status-danger
+    color: $theme-status-danger
+  &.btn-primary:hover, &.btn-primary:focus,
+  &.btn-success:hover, &.btn-success:focus,
+  &.btn-info:hover, &.btn-info:focus,
+  &.btn-warning:hover, &.btn-warning:focus,
+  &.btn-danger:hover, &.btn-danger:focus
+    color: $theme-shade-1
 
 img
   +manipulation-none
