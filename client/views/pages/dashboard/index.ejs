@@ -1,12 +1,4 @@
 <%- contentFor('content') %>
-<div id="video-container">
-  <video id="video"></video>
-<canvas id="canvas" style="display:none;"></canvas>
-<div id="buttoncontent">
-
-</div>
-<button id="startbutton">CAPTURE</button>
-</div>
 <div class="wr-section">
   <div class="wr-title row text-center"><div class="col-xs-12">
     <h4>Pick style</h4>
@@ -92,7 +84,18 @@
                 <div class="wr-title"><h5>Price</h5></div>
                 <div class="wr-content mini"><h4 id="modal-price"></h4></div>
               </div>
-            </div>
+              <hr />
+              <div class="wr-section">
+                <div class="wr-title"><h5>Take a selfie please..</h5></div>
+                <div class="wr-content mini">
+                  <div class="wr-video">
+                    <div class="video-tag"><h2>BEFORE</h2></div>
+                    <video id="video"></video>
+                    <canvas id="canvas" style="display:none;"></canvas>
+                    <button id="startbutton" class="btn btn-block btn-cutme">CAPTURE</button>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
         <div class="modal-footer">
