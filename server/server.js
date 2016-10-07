@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+var path = require('path')
 var port = process.env.PORT || 8080
 var mongoose = require('mongoose')
 var cors = require('cors')
@@ -13,6 +14,8 @@ mongoose.connect(configDB.url)
 app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(express.static(path.join(__dirname, 'resources')));
 
 app.use(session({
   secret: 'cutmeemangkecebanget',
