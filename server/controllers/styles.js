@@ -12,61 +12,61 @@ function display(req, res, next){
       {
         "id":1,
         "file":url + '/images/man-hairstyles/1.jpg',
-        "name":"Hair #1",
+        "name":"Cool Jack",
         "price":100000,
         "rating":4
       },{
         "id":2,
         "file":url + '/images/man-hairstyles/2.jpg',
-        "name":"Hair #2",
+        "name":"Beckham Wannabe",
         "price":23000,
         "rating":3
       },{
         "id":3,
         "file":url + '/images/man-hairstyles/3.jpg',
-        "name":"Hair #3",
+        "name":"James Dean",
         "price":150000,
         "rating":4
       },{
         "id":4,
         "file":url + '/images/man-hairstyles/4.jpg',
-        "name":"Hair #4",
+        "name":"Sexy Maley",
         "price":80000,
         "rating":5
       },{
         "id":5,
         "file":url + '/images/man-hairstyles/5.jpg',
-        "name":"Hair #5",
+        "name":"Dave Kece",
         "price":50000,
         "rating":4
       },{
         "id":6,
         "file":url + '/images/man-hairstyles/6.jpg',
-        "name":"Hair #6",
+        "name":"Kim Style",
         "price":100000,
         "rating":4
       },{
         "id":7,
         "file":url + '/images/man-hairstyles/7.jpg',
-        "name":"Hair #7",
+        "name":"Spike Pitt",
         "price":100000,
         "rating":4
       },{
         "id":8,
         "file":url + '/images/man-hairstyles/8.jpg',
-        "name":"Hair #8",
+        "name":"Bryan Metal",
         "price":90000,
         "rating":4
       },{
         "id":9,
         "file":url + '/images/man-hairstyles/9.jpg',
-        "name":"Hair #9",
+        "name":"Classic Tom",
         "price":75000,
         "rating":4
       },{
         "id":10,
         "file":url + '/images/man-hairstyles/10.jpg',
-        "name":"Hair #10",
+        "name":"Tony Curl",
         "price":75000,
         "rating":4
       }
