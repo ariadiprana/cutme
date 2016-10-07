@@ -61,7 +61,8 @@ section.dashboard-content
   .wr-title
     + .wr-content
       margin-top: 20px
-  .wr-content
+    + .wr-content.mini
+      margin-top: 5px
 
 .wr-map
   background: $theme-shade-4
@@ -75,6 +76,15 @@ section.dashboard-content
     +calculate-left(50%, 12.5px)
     img
       height: 40px
+
+.wr-vertical-align
+  .wr-outer
+    display: table
+    width: 100%
+    height: 100%
+    .wr-inner
+      display: table-cell
+      vertical-align: middle
 
 #cutme-menu
   background: $theme-shade-1

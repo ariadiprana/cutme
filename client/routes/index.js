@@ -22,4 +22,11 @@ router.get('/dashboard', function(req, res, next) {
   res.render('pages/dashboard', locals);
 })
 
+router.get('/confirmation', function(req, res, next) {
+  var locals = {
+    dashboard: true
+  };
+  res.render('pages/confirmation', locals);
+})
+
 module.exports = router

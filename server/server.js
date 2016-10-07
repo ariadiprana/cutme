@@ -1,23 +1,30 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+var path = require('path')
 var port = process.env.PORT || 8080
 var mongoose = require('mongoose')
 var cors = require('cors')
 var configDB = require('./config/database.js');
 var passport = require('passport');
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
 
 mongoose.connect(configDB.url)
 app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(path.join(__dirname, 'resources')));
+
 app.use(session({
   secret: 'cutmeemangkecebanget',
   resave: true,
   saveUninitialized: true
 }));
+
+app.use(fileUpload())
+
 app.use(passport.initialize());
 app.use(passport.session());
 

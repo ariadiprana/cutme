@@ -92,6 +92,19 @@ ul {
       margin-top: 10px;
       padding-top: 10px; }
 
+.modal {
+  padding: 0px !important; }
+  @media (max-width: 767px) {
+    .modal {
+      margin: 0px auto;
+      width: 90%; } }
+  .modal .modal-dialog {
+    margin: 0px; }
+  .modal .modal-content {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: none; }
+
 * {
   font: 14px "Prompt", sans-serif; }
 
@@ -155,6 +168,9 @@ section.dashboard-content {
 .wr-section .wr-title + .wr-content {
   margin-top: 20px; }
 
+.wr-section .wr-title + .wr-content.mini {
+  margin-top: 5px; }
+
 .wr-map {
   background: #CACACA;
   margin-bottom: 20px;
@@ -173,6 +189,14 @@ section.dashboard-content {
     left: calc(50% - 12.5px - 0px); }
     .wr-map .map-pin img {
       height: 40px; }
+
+.wr-vertical-align .wr-outer {
+  display: table;
+  width: 100%;
+  height: 100%; }
+  .wr-vertical-align .wr-outer .wr-inner {
+    display: table-cell;
+    vertical-align: middle; }
 
 #cutme-menu {
   background: #FFFFFF;

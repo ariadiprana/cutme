@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const ordersController = require('../controllers/orders')
 const customerController = require('../controllers/customers')
+const styleController = require('../controllers/styles')
 
 
 router.get('/', function(req, res) {
@@ -15,6 +16,8 @@ router.post('/orders', ordersController.insert)
 router.get('/orders', ordersController.display)
 router.put('/orders/:id', ordersController.update)
 router.delete('/orders/:id', ordersController.hapus)
+router.post('/orders/uploadImg', ordersController.uploadImg)
+
 
 //--------------------------------------------//
 
@@ -33,5 +36,8 @@ router.post('/users', userController.insert)
 router.get('/users', userController.display)
 router.put('/users/:id', userController.update)
 router.delete('/users/:id', userController.hapus)
+================ Hair Style API ================
+*/
+router.get('/styles/:type', styleController.display)
 
 module.exports = router
