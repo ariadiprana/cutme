@@ -1,4 +1,4 @@
-# Cutme :barber::barber::barber:
+# Cutme :barber: :barber: :barber:
 
 ## Your solution for your hair need
 This is application for your hair problem, when you need to cut your hair, make an order and your personal hair assistant will come to your location.
