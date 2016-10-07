@@ -1,4 +1,12 @@
 <%- contentFor('content') %>
+<div id="video-container">
+  <video id="video"></video>
+<canvas id="canvas" style="display:none;"></canvas>
+<div id="buttoncontent">
+
+</div>
+<button id="startbutton">CAPTURE</button>
+</div>
 <div class="wr-section">
   <div class="wr-title row text-center"><div class="col-xs-12">
     <h4>Pick style</h4>
@@ -53,7 +61,7 @@
             <div class="nano-content">
               <div class="wr-section">
                 <div class="wr-title"><h5>Name</h5></div>
-                <div class="wr-content mini"><h4>John Doe</h4></div>
+                <div class="wr-content mini"><h4 id="modal-name"></h4></div>
               </div>
               <hr />
               <div class="wr-section">
