@@ -7,7 +7,7 @@ function display(req, res, next){
   var url = "localhost:8080"
   var data = null
 
-  if(req.params.style == 1){ // MAN STYLE
+  if(req.params.type == 1){ // MAN STYLE
     data = [
       {
         "id":1,
