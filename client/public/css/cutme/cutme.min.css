@@ -126,6 +126,10 @@ section.dashboard-content {
   transition: all ease-in 0.2s; }
   section.dashboard-content.man {
     background: #0B2652; }
+    section.dashboard-content.man .modal .modal-content {
+      background: #0B2652; }
+      section.dashboard-content.man .modal .modal-content .modal-header, section.dashboard-content.man .modal .modal-content .modal-footer {
+        border-color: #ECD444; }
     section.dashboard-content.man h1, section.dashboard-content.man h2, section.dashboard-content.man h3, section.dashboard-content.man h4, section.dashboard-content.man h5, section.dashboard-content.man h6 {
       color: #ECD444; }
     section.dashboard-content.man hr {
@@ -144,6 +148,10 @@ section.dashboard-content {
       color: #0B2652; }
   section.dashboard-content.woman {
     background: #ee5b5b; }
+    section.dashboard-content.woman .modal .modal-content {
+      background: #ee5b5b; }
+      section.dashboard-content.woman .modal .modal-content .modal-header, section.dashboard-content.woman .modal .modal-content .modal-footer {
+        border-color: #ffd9d9; }
     section.dashboard-content.woman h1, section.dashboard-content.woman h2, section.dashboard-content.woman h3, section.dashboard-content.woman h4, section.dashboard-content.woman h5, section.dashboard-content.woman h6 {
       color: #ffd9d9; }
     section.dashboard-content.woman hr {

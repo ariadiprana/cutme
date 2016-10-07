@@ -19,6 +19,11 @@ section.dashboard-content
   +transition(all, ease-in, 0.2s)
   &.man
     background: $theme-color-man-1
+    .modal
+      .modal-content
+        background: $theme-color-man-1
+        .modal-header, .modal-footer
+          border-color: $theme-color-man-2
     h1, h2, h3, h4, h5, h6
       color: $theme-color-man-2
     hr
@@ -38,6 +43,11 @@ section.dashboard-content
       color: $theme-color-man-1
   &.woman
     background: $theme-color-woman-1
+    .modal
+      .modal-content
+        background: $theme-color-woman-1
+        .modal-header, .modal-footer
+          border-color: $theme-color-woman-2
     h1, h2, h3, h4, h5, h6
       color: $theme-color-woman-2
     hr
