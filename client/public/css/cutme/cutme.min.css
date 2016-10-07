@@ -168,6 +168,9 @@ section.dashboard-content {
 .wr-section .wr-title + .wr-content {
   margin-top: 20px; }
 
+.wr-section .wr-title + .wr-content.mini {
+  margin-top: 5px; }
+
 .wr-map {
   background: #CACACA;
   margin-bottom: 20px;
