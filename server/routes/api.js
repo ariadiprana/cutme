@@ -30,6 +30,12 @@ router.put('/customers/:id', customerController.update)
 router.delete('/customers/:id', customerController.hapus)
 
 /*
+================ User API ================
+*/
+router.post('/users', userController.insert)
+router.get('/users', userController.display)
+router.put('/users/:id', userController.update)
+router.delete('/users/:id', userController.hapus)
 ================ Hair Style API ================
 */
 router.get('/styles/:type', styleController.display)
