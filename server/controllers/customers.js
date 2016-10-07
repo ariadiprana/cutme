@@ -14,7 +14,8 @@ module.exports = {
   insert: insert,
   display: display,
   update:update,
-  hapus:hapus
+  hapus:hapus,
+  login:login
 }
 
 function insert(req,res,next){
@@ -71,4 +72,16 @@ function display(req,res,next){
     Customers.find({},(err,result) => {
           res.json(result)
     })
+}
+
+function login(req,res,next){
+  Customers.findOne({
+    username:req.body.username,
+    password:req.body.password
+  },(err,items) => {
+      if(err)throw err
+
+        res.json(items)
+
+  })
 }

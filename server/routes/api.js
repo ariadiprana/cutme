@@ -31,6 +31,8 @@ router.post('/customers', customerController.insert)
 router.get('/customers', customerController.display)
 router.put('/customers/:id', customerController.update)
 router.delete('/customers/:id', customerController.hapus)
+router.post('/customers/login', customerController.login)
+
 
 /*
 ================ User API ================
