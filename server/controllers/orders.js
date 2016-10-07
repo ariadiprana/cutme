@@ -51,9 +51,14 @@ function insert(req,res,next){
       status:req.body.status,
       hairPreference:req.body.hairPreference,
       imgBefore: {
-        data: fs.readFileSync(req.body.fileImgBefore),
+        data: req.body.imgBeforeData,
+        contentType: 'image/jpg'
+      },
+      imgAfter: {
+        data: req.body.imgAfterData,
         contentType: 'image/jpg'
       }
+
     })
     items.save()
     res.json(items)
