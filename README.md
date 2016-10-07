@@ -50,7 +50,10 @@ Property :
 - dt_created      :Date,
 - customerId      :String,
 - status          :String,
-- hairPreference  :String
+- hairPreference  :String,
+- imgBefore       :{ data: Buffer, contentType: String },
+- imgAfter        :{ data: Buffer, contentType: String }
+
 
 |Endpoint|HTTP|Description
 |--------|----|-----------
@@ -58,6 +61,7 @@ Property :
 |/api/orders|POST|add new orders
 |/api/orders/:id|PUT|update orders
 |/api/orders/:id|DEL|delete existing order
+|/api/orders/uploadImg/|POST|upload imgAfter in History
 
 - - -
 

@@ -5,15 +5,38 @@
   dt_created      :Date,
   customerId      :String,
   status          :String,
-  hairPreference  :String
+  hairPreference  :String,
+  imgBefore:{ data: Buffer, contentType: String},
+  imgAfter:{ data: Buffer, contentType: String}
 */
 var Orders = require('../models/orders')
 
 module.exports = {
-  insert: insert,
-  display: display,
-  update:update,
-  hapus:hapus
+  insert   : insert,
+  display  : display,
+  update   : update,
+  hapus    : hapus,
+  uploadImg: uploadImg
+}
+
+function uploadImg(req, res, next){
+
+  var uploadedFile;
+
+  console.log(req.files);
+  if (!req.files) {
+    res.send('No files were uploaded.')
+  }
+
+  uploadedFile = req.files.uploadedFile
+  uploadedFile.mv('test.jpg', function(err){
+
+    if (err) {
+      res.status(500).send(err)
+    } else {
+      res.send(uploadedFile.data)
+    }
+  })
 }
 
 function insert(req,res,next){
@@ -29,7 +52,7 @@ function insert(req,res,next){
       hairPreference:req.body.hairPreference,
       imgBefore: {
         data: fs.readFileSync(req.body.fileImgBefore),
-        contentType: 'image/png'
+        contentType: 'image/jpg'
       }
     })
     items.save()
@@ -48,6 +71,10 @@ function update(req,res,next){
       items.customerId = req.body.customerId
       items.status = req.body.status
       items.hairPreference = req.body.hairPreference
+      items.imgBefore.data = req.body.imgBeforeData
+      items.imgBefore.contentType = 'image/jpg'
+      items.imgAfter.data = req.body.imgAfterData
+      items.imgAfter.contentType = 'image/jpg'
 
       items.save((err)=> {
         if(err) throw err

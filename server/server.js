@@ -7,6 +7,7 @@ var cors = require('cors')
 var configDB = require('./config/database.js');
 var passport = require('passport');
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
 
 mongoose.connect(configDB.url)
 app.use(cors())
@@ -18,6 +19,9 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
+
+app.use(fileUpload())
+
 app.use(passport.initialize());
 app.use(passport.session());
 

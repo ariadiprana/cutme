@@ -15,6 +15,8 @@ router.post('/orders', ordersController.insert)
 router.get('/orders', ordersController.display)
 router.put('/orders/:id', ordersController.update)
 router.delete('/orders/:id', ordersController.hapus)
+router.post('/orders/uploadImg', ordersController.uploadImg)
+
 
 //--------------------------------------------//
 
