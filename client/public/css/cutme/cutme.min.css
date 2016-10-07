@@ -57,6 +57,7 @@ ul {
     color: #FFFFFF; }
 
 .thumbnail {
+  background: transparent;
   border-radius: 0px;
   margin: 0px;
   padding: 10px; }
@@ -118,7 +119,47 @@ section.content {
   padding-bottom: 70px; }
 
 section.dashboard-content {
-  padding-top: 70px; }
+  padding-top: 70px;
+  -moz-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s; }
+  section.dashboard-content.man {
+    background: #0B2652; }
+    section.dashboard-content.man h1, section.dashboard-content.man h2, section.dashboard-content.man h3, section.dashboard-content.man h4, section.dashboard-content.man h5, section.dashboard-content.man h6 {
+      color: #ECD444; }
+    section.dashboard-content.man hr {
+      border-color: #ECD444; }
+    section.dashboard-content.man .thumbnail {
+      border-color: #ECD444; }
+      section.dashboard-content.man .thumbnail .title {
+        color: #ECD444; }
+      section.dashboard-content.man .thumbnail ul.info li {
+        color: #ECD444; }
+      section.dashboard-content.man .thumbnail .action {
+        border-color: #ECD444; }
+    section.dashboard-content.man .btn-cutme {
+      background: #ECD444;
+      border-color: #ECD444;
+      color: #0B2652; }
+  section.dashboard-content.woman {
+    background: #ee5b5b; }
+    section.dashboard-content.woman h1, section.dashboard-content.woman h2, section.dashboard-content.woman h3, section.dashboard-content.woman h4, section.dashboard-content.woman h5, section.dashboard-content.woman h6 {
+      color: #ffd9d9; }
+    section.dashboard-content.woman hr {
+      border-color: #ffd9d9; }
+    section.dashboard-content.woman .thumbnail {
+      border-color: #ffd9d9; }
+      section.dashboard-content.woman .thumbnail .title {
+        color: #ffd9d9; }
+      section.dashboard-content.woman .thumbnail ul.info li {
+        color: #ffd9d9; }
+      section.dashboard-content.woman .thumbnail .action {
+        border-color: #ffd9d9; }
+    section.dashboard-content.woman .btn-cutme {
+      background: #ffd9d9;
+      border-color: #ffd9d9;
+      color: #ee5b5b; }
 
 .with-opacity {
   opacity: 0.5; }
@@ -148,7 +189,7 @@ section.dashboard-content {
   padding: 40px 0px;
   text-align: center; }
   .quote:after {
-    background: #FFBCB5;
+    background: #ffd9d9;
     content: "";
     display: block;
     margin: 40px auto 0px;

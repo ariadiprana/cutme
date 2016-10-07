@@ -16,6 +16,45 @@ section.content
 
 section.dashboard-content
   padding-top: 70px
+  +transition(all, ease-in, 0.2s)
+  &.man
+    background: $theme-color-man-1
+    h1, h2, h3, h4, h5, h6
+      color: $theme-color-man-2
+    hr
+      border-color: $theme-color-man-2
+    .thumbnail
+      border-color: $theme-color-man-2
+      .title
+        color: $theme-color-man-2
+      ul.info
+        li
+          color: $theme-color-man-2
+      .action
+        border-color: $theme-color-man-2
+    .btn-cutme
+      background: $theme-color-man-2
+      border-color: $theme-color-man-2
+      color: $theme-color-man-1
+  &.woman
+    background: $theme-color-woman-1
+    h1, h2, h3, h4, h5, h6
+      color: $theme-color-woman-2
+    hr
+      border-color: $theme-color-woman-2
+    .thumbnail
+      border-color: $theme-color-woman-2
+      .title
+        color: $theme-color-woman-2
+      ul.info
+        li
+          color: $theme-color-woman-2
+      .action
+        border-color: $theme-color-woman-2
+    .btn-cutme
+      background: $theme-color-woman-2
+      border-color: $theme-color-woman-2
+      color: $theme-color-woman-1
 
 .with-opacity
   opacity: 0.5

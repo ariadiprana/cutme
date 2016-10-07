@@ -4,7 +4,7 @@ module.exports = {
 
 
 function display(req, res, next){
-  var url = "localhost:8080"
+  var url = "http://localhost:8080"
   var data = null
 
   if(req.params.type == 1){ // MAN STYLE
@@ -76,7 +76,7 @@ function display(req, res, next){
       {
         "id":1,
         "file":url + '/images/woman-hairstyles/1.jpg',
-        "name":"Hair #1",
+        "name":"Short & Sleek",
         "price":100000,
         "rating":4
       },{
