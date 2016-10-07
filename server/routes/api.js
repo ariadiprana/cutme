@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const ordersController = require('../controllers/orders')
 const customerController = require('../controllers/customers')
+const userController = require('../controllers/users')
 const styleController = require('../controllers/styles')
 const barberController = require('../controllers/barbers')
 
@@ -47,7 +48,7 @@ router.get('/styles/:type', styleController.display)
 /*
 ================ Barbers API ================
 */
-router.get('/barbers/', baberController.display)
+router.get('/barbers/', barberController.display)
 
 
 module.exports = router

@@ -4,7 +4,7 @@ module.exports = {
 
 
 function display(req, res, next){
-  var url = "localhost:8080"
+  var url = "http://localhost:8080"
   var data = null
 
   data = [{
