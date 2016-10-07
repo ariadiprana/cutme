@@ -1,4 +1,5 @@
 # Cutme :barber::barber::barber:
+
 ## Your solution for your hair need
 This is application for your hair problem, when you need to cut your hair, make an order and your personal hair assistant will come to your location.
 
@@ -11,19 +12,22 @@ This project is contributed by :
 4. digachandra :bow:
 
 # Architecture
+
 Server & Client
 
 ## Data
+
 | Model | Description
 |------|----
 | customers | this is to represent all customers for log in purposes
 | orders | this is to represent each order inside the application
-----------------------------------------------------
 
 ## Server
 
 ### Customers
+
 Property :
+
 - fullName    : String,
 - email       : String,
 - username    : String,
@@ -33,17 +37,17 @@ Property :
 - zipcode     : String,
 - phone       : String
 
-
-|Endpoint|HTTP|Description
+| Endpoint|HTTP|Description
 |--------|----|-----------
-|/api/customers|GET|return customer detail in JSON
-|/api/customers|POST| add new customer
-|/api/customers/:id|PUT|update customer
-|/api/customers/:id|DEL|delete existing customer
-
+| /api/customers|GET|return customer detail in JSON
+| /api/customers|POST| add new customer
+| /api/customers/:id|PUT|update customer
+| /api/customers/:id|DEL|delete existing customer
 
 ### Orders
+
 Property :
+
 - hairStyleId     :String,
 - barberName      :String,
 - address         :String,
@@ -66,6 +70,7 @@ Property :
 - - -
 
 ## Client
+
 - home
 - items
   - id
@@ -73,6 +78,5 @@ Property :
   - profile
 - carts
 
--------------------------------
 
 *This is a repository for displaying our learning result in phase 2 Hacktiv8*
