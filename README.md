@@ -21,7 +21,6 @@ Server & Client
 |------|----
 | customers | this is to represent all customers for log in purposes
 | orders | this is to represent each order inside the application
-| users | this is to represent users using the application
 
 
 
@@ -68,27 +67,6 @@ Property :
 |/api/orders/:id|PUT|update orders
 |/api/orders/:id|DEL|delete existing order
 |/api/orders/uploadImg/|POST|upload imgAfter in History
-
-### Users
-
-Property :
-
-- username        :String,
-- password        :String
-
-router.post('/customers', customerController.insert)
-router.get('/customers', customerController.display)
-router.put('/customers/:id', customerController.update)
-router.delete('/customers/:id', customerController.hapus)
-router.post('/customers/login', customerController.login)
-
-
-|Endpoint|HTTP|Description
-|--------|----|-----------
-|/api/customers|GET|return all users in JSON
-|/api/customers|POST|add new users
-|/api/customers/:id|PUT|update users
-|/api/customers/:id|DEL|delete existing users
 
 - - -
 
