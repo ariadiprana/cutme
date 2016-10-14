@@ -4,9 +4,11 @@
 <script src="js/plugin/owl.carousel.min.js"></script>
 <script src="js/plugin/jquery.nanoscroller.min.js"></script>
 <script src="js/cutme/cutme.min.js"></script>
-<% if(dashboard){ %>
-<script src="js/cutme/dashboard.min.js"></script>
+<% if(history){ %>
+<script src="js/cutme/history.min.js"></script>
+<% } else if(dashboard){ %>
 <script src="js/cutme/camcap.min.js"></script>
+<script src="js/cutme/dashboard.min.js"></script>
 <% } else if(signin){ %>
 <script src="js/cutme/signin.min.js"></script>
 <% } else if(signup){ %>
