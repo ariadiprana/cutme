@@ -19,6 +19,15 @@ section.dashboard-content
   +transition(all, ease-in, 0.2s)
   &.man
     background: $theme-color-man-1
+    .navbar
+      background: $theme-color-man-1
+      border-color: $theme-color-man-2
+      .navbar-brand
+        color: $theme-color-man-2
+      .navbar-nav
+        > li
+          > a
+            color: $theme-color-man-2
     .modal
       .modal-content
         background: $theme-color-man-1
@@ -58,8 +67,19 @@ section.dashboard-content
           .btn-cutme
             background: $theme-color-man-1
             color: $theme-color-man-2
+    .wr-map
+      border-color: $theme-color-man-2
   &.woman
     background: $theme-color-woman-1
+    .navbar
+      background: $theme-color-woman-1
+      border-color: $theme-color-woman-2
+      .navbar-brand
+        color: $theme-color-woman-2
+      .navbar-nav
+        > li
+          > a
+            color: $theme-color-woman-2
     .modal
       .modal-content
         background: $theme-color-woman-1
@@ -99,6 +119,8 @@ section.dashboard-content
           .btn-cutme
             background: $theme-color-woman-1
             color: $theme-color-woman-2
+    .wr-map
+      border-color: $theme-color-woman-2
 
 .with-opacity
   opacity: 0.5
@@ -148,10 +170,12 @@ section.dashboard-content
       margin-top: 5px
 
 .wr-map
-  background: $theme-shade-4
+  border: 1px solid $theme-shade-4
   margin-bottom: 20px
+  padding: 10px
   position: relative
   .map-block
+    background: $theme-shade-4
     height: 300px
   .map-pin
     position: absolute
