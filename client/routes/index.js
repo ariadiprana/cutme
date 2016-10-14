@@ -28,13 +28,13 @@ router.get('/dashboard', function(req, res, next) {
   res.render('pages/dashboard', locals);
 })
 
-router.get('/confirmation', function(req, res, next) {
+router.get('/history', function(req, res, next) {
   var locals = {
     dashboard: true,
     signin: false,
     signup: false
   };
-  res.render('pages/confirmation', locals);
+  res.render('pages/history', locals);
 })
 
 module.exports = router
