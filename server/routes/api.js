@@ -8,7 +8,7 @@ const barberController = require('../controllers/barbers')
 
 
 router.get('/', function(req, res) {
-    res.render('main.ejs');
+    res.render('chatServer');
 });
 
 /*
