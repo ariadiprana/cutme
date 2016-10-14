@@ -4,6 +4,7 @@ var router = express.Router()
 router.get('/', function(req, res, next) {
   var locals = {
     dashboard: false,
+    history: false,
     signin: true,
     signup: false
   };
@@ -13,6 +14,7 @@ router.get('/', function(req, res, next) {
 router.get('/signup', function(req, res, next) {
   var locals = {
     dashboard: false,
+    history: false,
     signin: false,
     signup: true
   };
@@ -22,6 +24,7 @@ router.get('/signup', function(req, res, next) {
 router.get('/dashboard', function(req, res, next) {
   var locals = {
     dashboard: true,
+    history: false,
     signin: false,
     signup: false
   };
@@ -30,7 +33,8 @@ router.get('/dashboard', function(req, res, next) {
 
 router.get('/history', function(req, res, next) {
   var locals = {
-    dashboard: true,
+    dashboard: false,
+    history: true,
     signin: false,
     signup: false
   };

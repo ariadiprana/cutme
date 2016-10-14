@@ -141,6 +141,13 @@ section.dashboard-content {
     section.dashboard-content.man .navbar {
       background: #0B2652;
       border-color: #ECD444; }
+      section.dashboard-content.man .navbar .navbar-collapse {
+        border-color: #ECD444; }
+      section.dashboard-content.man .navbar .navbar-toggle {
+        background: #0B2652 !important;
+        border-color: #ECD444; }
+        section.dashboard-content.man .navbar .navbar-toggle .icon-bar {
+          background: #ECD444; }
       section.dashboard-content.man .navbar .navbar-brand {
         color: #ECD444; }
       section.dashboard-content.man .navbar .navbar-nav > li > a {
@@ -186,6 +193,13 @@ section.dashboard-content {
     section.dashboard-content.woman .navbar {
       background: #ee5b5b;
       border-color: #ffd9d9; }
+      section.dashboard-content.woman .navbar .navbar-collapse {
+        border-color: #ffd9d9; }
+      section.dashboard-content.woman .navbar .navbar-toggle {
+        background: #ee5b5b !important;
+        border-color: #ffd9d9; }
+        section.dashboard-content.woman .navbar .navbar-toggle .icon-bar {
+          background: #ffd9d9; }
       section.dashboard-content.woman .navbar .navbar-brand {
         color: #ffd9d9; }
       section.dashboard-content.woman .navbar .navbar-nav > li > a {

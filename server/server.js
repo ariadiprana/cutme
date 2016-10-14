@@ -9,6 +9,14 @@ var configDB = require('./config/database.js');
 var passport = require('passport');
 var session = require('express-session');
 var fileUpload = require('express-fileupload');
+var io = require('socket.io')(http);
+var http = require('http').Server(app);
+
+io.on('connection', function(socket){
+  socket.on('chat message', function(msg){
+    io.emit('chat message', msg);
+  });
+});
 
 mongoose.connect(configDB.url)
 app.use(cors())
