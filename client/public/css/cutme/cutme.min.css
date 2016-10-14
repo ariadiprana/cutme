@@ -112,6 +112,9 @@ ul {
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s; }
 
+#historywrapper {
+  background: red !important; }
+
 * {
   font: 14px "Prompt", sans-serif; }
 
