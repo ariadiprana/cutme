@@ -150,6 +150,9 @@ section.dashboard-content {
       background: #ECD444; }
       section.dashboard-content.man .wr-video .video-tag * {
         color: #0B2652 !important; }
+    section.dashboard-content.man ul.wr-item li.item.chosen .btn-cutme {
+      background: #0B2652;
+      color: #ECD444; }
   section.dashboard-content.woman {
     background: #ee5b5b; }
     section.dashboard-content.woman .modal .modal-content {
@@ -176,6 +179,9 @@ section.dashboard-content {
       background: #ffd9d9; }
       section.dashboard-content.woman .wr-video .video-tag * {
         color: #ee5b5b !important; }
+    section.dashboard-content.woman ul.wr-item li.item.chosen .btn-cutme {
+      background: #ee5b5b;
+      color: #ffd9d9; }
 
 .with-opacity {
   opacity: 0.5; }
@@ -270,6 +276,9 @@ section.dashboard-content {
   .wr-video video {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
+
+ul.wr-item li.item.passive *:not(div):not(.btn-cutme) {
+  opacity: 0.5; }
 
 #cutme-menu {
   background: #FFFFFF;

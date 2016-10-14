@@ -46,6 +46,11 @@ section.dashboard-content
         background: $theme-color-man-2
         *
           color: $theme-color-man-1 !important
+    ul.wr-item
+      li.item.chosen
+        .btn-cutme
+          background: $theme-color-man-1
+          color: $theme-color-man-2
   &.woman
     background: $theme-color-woman-1
     .modal
@@ -75,6 +80,11 @@ section.dashboard-content
         background: $theme-color-woman-2
         *
           color: $theme-color-woman-1 !important
+    ul.wr-item
+      li.item.chosen
+        .btn-cutme
+          background: $theme-color-woman-1
+          color: $theme-color-woman-2
 
 .with-opacity
   opacity: 0.5
@@ -160,6 +170,12 @@ section.dashboard-content
   video
     -webkit-transform: scaleX(-1)
     transform: scaleX(-1)
+
+ul.wr-item
+  li.item.chosen
+  li.item.passive
+    *:not(div):not(.btn-cutme)
+      opacity: 0.5
 
 #cutme-menu
   background: $theme-shade-1
