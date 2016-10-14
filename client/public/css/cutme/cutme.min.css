@@ -113,13 +113,31 @@ ul {
   transition: all ease-in 0.2s; }
 
 section.content.dashboard-content.history {
-  background: red !important; }
-
-.history-section {
-  background: red !important; }
-
-#body-history {
-  background: red !important; }
+  background: #ffffff !important; }
+  section.content.dashboard-content.history.woman h1, section.content.dashboard-content.history.woman h2, section.content.dashboard-content.history.woman h3, section.content.dashboard-content.history.woman h4, section.content.dashboard-content.history.woman h5, section.content.dashboard-content.history.woman h6 {
+    color: #83bd6c; }
+  section.content.dashboard-content.history.woman .btn-cutme {
+    background: #bae4a9;
+    border-color: #bae4a9;
+    color: #83bd6c; }
+  section.content.dashboard-content.history.woman .navbar .navbar-toggle {
+    background: #bae4a9 !important;
+    border-color: #83bd6c !important; }
+  section.content.dashboard-content.history.woman .navbar .navbar-brand {
+    color: #bae4a9; }
+  section.content.dashboard-content.history.man h1, section.content.dashboard-content.history.man h2, section.content.dashboard-content.history.man h3, section.content.dashboard-content.history.man h4, section.content.dashboard-content.history.man h5, section.content.dashboard-content.history.man h6 {
+    color: #8F5C38; }
+  section.content.dashboard-content.history.man .btn-cutme {
+    background: #8F5C38;
+    border-color: #8F5C38;
+    color: #A89B8C; }
+  section.content.dashboard-content.history.man .navbar .navbar-toggle {
+    background: #8F5C38 !important;
+    border-color: #A89B8C !important; }
+  section.content.dashboard-content.history.man .navbar .navbar-brand {
+    color: #8F5C38; }
+  section.content.dashboard-content.history .navbar-header {
+    background: #ffffff !important; }
 
 * {
   font: 14px "Prompt", sans-serif; }
