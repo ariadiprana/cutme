@@ -100,7 +100,7 @@ ul {
       margin: 0px auto;
       width: 90%; } }
   .modal .modal-dialog {
-    margin: 0px; }
+    margin: 0px auto; }
   .modal .modal-content {
     border: 0px;
     border-radius: 0px;
@@ -354,7 +354,7 @@ section.dashboard-content {
     z-index: 100; }
     .wr-video .video-tag * {
       color: #FFFFFF !important; }
-  .wr-video video {
+  .wr-video video, .wr-video canvas {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
 
