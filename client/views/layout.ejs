@@ -5,7 +5,11 @@
 </head>
 <body>
   <% if(dashboard){ %>
+  <% if(history){ %>
+  <section class="content dashboard-content history">
+  <% } else { %>
   <section class="content dashboard-content">
+  <% } %>
     <div class="container">
       <%- include dashboard_nav.ejs %>
       <%- content %>
