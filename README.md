@@ -22,6 +22,8 @@ Server & Client
 | customers | this is to represent all customers for log in purposes
 | orders | this is to represent each order inside the application
 
+
+
 ## Server
 
 ### Customers
@@ -49,12 +51,11 @@ Property :
 Property :
 
 - hairStyleId     :String,
-- barberName      :String,
+- barberId        :String,
 - address         :String,
 - dt_created      :Date,
-- customerId      :String,
+- userId          :String,
 - status          :String,
-- hairPreference  :String,
 - imgBefore       :{ data: Buffer, contentType: String },
 - imgAfter        :{ data: Buffer, contentType: String }
 
