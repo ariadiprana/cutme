@@ -106,6 +106,12 @@ ul {
     border-radius: 0px;
     box-shadow: none; }
 
+.navbar {
+  -moz-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s; }
+
 * {
   font: 14px "Prompt", sans-serif; }
 
@@ -126,6 +132,13 @@ section.dashboard-content {
   transition: all ease-in 0.2s; }
   section.dashboard-content.man {
     background: #0B2652; }
+    section.dashboard-content.man .navbar {
+      background: #0B2652;
+      border-color: #ECD444; }
+      section.dashboard-content.man .navbar .navbar-brand {
+        color: #ECD444; }
+      section.dashboard-content.man .navbar .navbar-nav > li > a {
+        color: #ECD444; }
     section.dashboard-content.man .modal .modal-content {
       background: #0B2652; }
       section.dashboard-content.man .modal .modal-content .modal-header, section.dashboard-content.man .modal .modal-content .modal-footer {
@@ -160,8 +173,17 @@ section.dashboard-content {
       section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail .btn-cutme {
         background: #0B2652;
         color: #ECD444; }
+    section.dashboard-content.man .wr-map {
+      border-color: #ECD444; }
   section.dashboard-content.woman {
     background: #ee5b5b; }
+    section.dashboard-content.woman .navbar {
+      background: #ee5b5b;
+      border-color: #ffd9d9; }
+      section.dashboard-content.woman .navbar .navbar-brand {
+        color: #ffd9d9; }
+      section.dashboard-content.woman .navbar .navbar-nav > li > a {
+        color: #ffd9d9; }
     section.dashboard-content.woman .modal .modal-content {
       background: #ee5b5b; }
       section.dashboard-content.woman .modal .modal-content .modal-header, section.dashboard-content.woman .modal .modal-content .modal-footer {
@@ -196,6 +218,8 @@ section.dashboard-content {
       section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail .btn-cutme {
         background: #ee5b5b;
         color: #ffd9d9; }
+    section.dashboard-content.woman .wr-map {
+      border-color: #ffd9d9; }
 
 .with-opacity {
   opacity: 0.5; }
@@ -249,10 +273,12 @@ section.dashboard-content {
   margin-top: 5px; }
 
 .wr-map {
-  background: #CACACA;
+  border: 1px solid #CACACA;
   margin-bottom: 20px;
+  padding: 10px;
   position: relative; }
   .wr-map .map-block {
+    background: #CACACA;
     height: 300px; }
   .wr-map .map-pin {
     position: absolute;
