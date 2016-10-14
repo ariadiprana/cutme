@@ -112,7 +112,10 @@ ul {
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s; }
 
-#historywrapper {
+.history-section {
+  background: red !important; }
+
+#body-history {
   background: red !important; }
 
 * {
