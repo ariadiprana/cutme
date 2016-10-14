@@ -79,5 +79,10 @@ Property :
   - profile
 - carts
 
+# Screenshoot
+<img src="Screen Shot 2016-10-14 at 7.31.26 PM.png"></img>
+<img src="Screen Shot 2016-10-14 at 7.31.52 PM.png"></img>
+<img src="Screen Shot 2016-10-14 at 7.32.22 PM.png"></img>
+<img src="Screen Shot 2016-10-14 at 7.37.30 PM.png"></img>
 
 *This is a repository for displaying our learning result in phase 2 Hacktiv8*
