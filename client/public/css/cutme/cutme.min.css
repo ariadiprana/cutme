@@ -100,7 +100,7 @@ ul {
       margin: 0px auto;
       width: 90%; } }
   .modal .modal-dialog {
-    margin: 0px; }
+    margin: 0px auto; }
   .modal .modal-content {
     border: 0px;
     border-radius: 0px;
