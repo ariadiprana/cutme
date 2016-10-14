@@ -3,12 +3,11 @@ var Schema = mongoose.Schema;
 
 var orderSchema = mongoose.Schema({
     hairStyleId:String,
-    barberName:String,
+    barberId:String,
     address:String,
     dt_created:Date,
-    customerId:String,
+    userId:String,
     status:String,
-    hairPreference:String,
     imgBefore:{ data: Buffer, contentType: String},
     imgAfter:{ data: Buffer, contentType: String}
 })

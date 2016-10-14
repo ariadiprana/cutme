@@ -1,13 +1,12 @@
 /*
-  hairStyleId     :String,
-  barberName      :String,
-  address         :String,
-  dt_created      :Date,
-  customerId      :String,
-  status          :String,
-  hairPreference  :String,
-  imgBefore:{ data: Buffer, contentType: String},
-  imgAfter:{ data: Buffer, contentType: String}
+hairStyleId     :   String,
+barberId        :   String,
+address         :   String,
+dt_created      :   Date,
+userId          :   String,
+status          :   String,
+imgBefore       :   { data: Buffer, contentType: String},
+imgAfter        :   { data: Buffer, contentType: String}
 */
 var Orders = require('../models/orders')
 
@@ -44,12 +43,11 @@ function insert(req,res,next){
 
     var items = new Orders({
       hairStyleId:req.body.hairStyleId,
-      barberName:req.body.barberName,
+      barberId:req.body.barberId,
       address:req.body.address,
       dt_created:req.body.dt_created,
-      customerId:req.body.customerId,
+      userId:req.body.userId,
       status:req.body.status,
-      hairPreference:req.body.hairPreference,
       imgBefore: {
         data: req.body.imgBeforeData,
         contentType: 'image/jpg'
@@ -73,9 +71,8 @@ function update(req,res,next){
       items.barberName = req.body.barberName
       items.address = req.body.address
       items.dt_created = req.body.dt_created
-      items.customerId = req.body.customerId
+      items.userId = req.body.userId
       items.status = req.body.status
-      items.hairPreference = req.body.hairPreference
       items.imgBefore.data = req.body.imgBeforeData
       items.imgBefore.contentType = 'image/jpg'
       items.imgAfter.data = req.body.imgAfterData
