@@ -150,9 +150,16 @@ section.dashboard-content {
       background: #ECD444; }
       section.dashboard-content.man .wr-video .video-tag * {
         color: #0B2652 !important; }
-    section.dashboard-content.man ul.wr-item li.item.chosen .btn-cutme {
-      background: #0B2652;
-      color: #ECD444; }
+    section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail {
+      background: #ECD444;
+      color: #0B2652; }
+      section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail * {
+        border-color: #0B2652; }
+      section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail h1, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail h2, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail h3, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail h4, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail h5, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail h6, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail span, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail p, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail .fa, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail i, section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail li {
+        color: #0B2652; }
+      section.dashboard-content.man ul.wr-item li.item.chosen .thumbnail .btn-cutme {
+        background: #0B2652;
+        color: #ECD444; }
   section.dashboard-content.woman {
     background: #ee5b5b; }
     section.dashboard-content.woman .modal .modal-content {
@@ -179,9 +186,16 @@ section.dashboard-content {
       background: #ffd9d9; }
       section.dashboard-content.woman .wr-video .video-tag * {
         color: #ee5b5b !important; }
-    section.dashboard-content.woman ul.wr-item li.item.chosen .btn-cutme {
-      background: #ee5b5b;
-      color: #ffd9d9; }
+    section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail {
+      background: #ffd9d9;
+      color: #ee5b5b; }
+      section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail * {
+        border-color: #ee5b5b; }
+      section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail h1, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail h2, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail h3, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail h4, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail h5, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail h6, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail span, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail p, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail .fa, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail i, section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail li {
+        color: #ee5b5b; }
+      section.dashboard-content.woman ul.wr-item li.item.chosen .thumbnail .btn-cutme {
+        background: #ee5b5b;
+        color: #ffd9d9; }
 
 .with-opacity {
   opacity: 0.5; }
@@ -276,9 +290,6 @@ section.dashboard-content {
   .wr-video video {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
-
-ul.wr-item li.item.passive *:not(div):not(.btn-cutme) {
-  opacity: 0.5; }
 
 #cutme-menu {
   background: #FFFFFF;

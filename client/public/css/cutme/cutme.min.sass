@@ -48,9 +48,16 @@ section.dashboard-content
           color: $theme-color-man-1 !important
     ul.wr-item
       li.item.chosen
-        .btn-cutme
-          background: $theme-color-man-1
-          color: $theme-color-man-2
+        .thumbnail
+          background: $theme-color-man-2
+          color: $theme-color-man-1
+          *
+            border-color: $theme-color-man-1
+          h1, h2, h3, h4, h5, h6, span, p, .fa, i, li
+            color: $theme-color-man-1
+          .btn-cutme
+            background: $theme-color-man-1
+            color: $theme-color-man-2
   &.woman
     background: $theme-color-woman-1
     .modal
@@ -82,9 +89,16 @@ section.dashboard-content
           color: $theme-color-woman-1 !important
     ul.wr-item
       li.item.chosen
-        .btn-cutme
-          background: $theme-color-woman-1
-          color: $theme-color-woman-2
+        .thumbnail
+          background: $theme-color-woman-2
+          color: $theme-color-woman-1
+          *
+            border-color: $theme-color-woman-1
+          h1, h2, h3, h4, h5, h6, span, p, .fa, i, li
+            color: $theme-color-woman-1
+          .btn-cutme
+            background: $theme-color-woman-1
+            color: $theme-color-woman-2
 
 .with-opacity
   opacity: 0.5
@@ -174,8 +188,6 @@ section.dashboard-content
 ul.wr-item
   li.item.chosen
   li.item.passive
-    *:not(div):not(.btn-cutme)
-      opacity: 0.5
 
 #cutme-menu
   background: $theme-shade-1
