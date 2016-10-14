@@ -33,7 +33,7 @@ router.get('/dashboard', function(req, res, next) {
 
 router.get('/history', function(req, res, next) {
   var locals = {
-    dashboard: false,
+    dashboard: true,
     history: true,
     signin: false,
     signup: false

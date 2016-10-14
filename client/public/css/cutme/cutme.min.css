@@ -112,6 +112,9 @@ ul {
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s; }
 
+section.content.dashboard-content.history {
+  background: red !important; }
+
 .history-section {
   background: red !important; }
 
