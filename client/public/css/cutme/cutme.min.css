@@ -336,7 +336,7 @@ section.dashboard-content {
     z-index: 100; }
     .wr-video .video-tag * {
       color: #FFFFFF !important; }
-  .wr-video video {
+  .wr-video video, .wr-video canvas {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
 
